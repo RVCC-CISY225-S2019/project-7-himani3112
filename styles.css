@@ -1,0 +1,81 @@
+*{
+    box-sizing: border-box;
+}
+
+input {
+    font-size: 1.3em;
+}
+
+button {
+    font-size: 1.3em;
+}
+
+h1 {
+    display: block;
+    font-size: 2.3em;
+    margin-top: 0.67em;
+    margin-bottom: 0.67em;
+    margin-left: 0;
+    margin-right: 0;
+    font-weight: bold;
+}
+
+legend {
+    color: black;
+    font-weight: bold;
+    font-size: 1.5em;
+    padding: 3px 6px;
+}
+
+textarea {
+    font-size: 1.5em;
+}
+
+p {
+    font-weight: bold;
+    font-size: 1.6em;
+}
+
+
+body {
+    font-family: 'Merriweather', serif;
+    margin: 0;
+}
+
+label {
+    font-weight: bold;
+}
+
+
+img {
+    max-width: 100%;
+}
+
+input:focus, textarea:focus{
+    color: darkblue;
+    width: auto;
+    height: auto;
+    overflow: visible;
+
+}
+
+img.my-picture {
+    border: 2px solid black;
+
+}
+
+hr {
+    border: none;
+    border-top: 3px dotted #111111;
+    color: #fff;
+    height: 2px;
+    width: 100%;
+}
+
+.fa-twitter {
+    color: #38A1F3;
+}
+
+footer {
+    text-align: center;
+}
