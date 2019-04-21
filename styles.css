@@ -1,23 +1,66 @@
-*{
+* {
     box-sizing: border-box;
 }
 
 input {
     font-size: 1.3em;
+    max-width: 100%;
 }
 
 button {
     font-size: 1.3em;
 }
 
+.iama {
+  max-width: 100%;
+  color: #000000;
+  font-size: 1.4em;
+}
+
+.my-name
+ {
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin-bottom: 0;
+}
+
+.my-location {
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+/*
+ footer  {
+  padding: 0.2em;
+  max-width: 100%;
+  background-color: #000000;
+     color: white;
+}
+*/
+
 h1 {
     display: block;
-    font-size: 2.3em;
+    font-size: 3em;
     margin-top: 0.67em;
     margin-bottom: 0.67em;
     margin-left: 0;
     margin-right: 0;
     font-weight: bold;
+}
+
+h3 {
+    display: block;
+    font-size: 2.5em;
+    margin-top: 0.67em;
+    margin-bottom: 0.67em;
+    margin-left: 0;
+    margin-right: 0;
+    font-weight: bold;
+}
+
+form {
+    position: relative;
+    background: #cccccc;
+    margin: auto;
 }
 
 legend {
@@ -29,11 +72,14 @@ legend {
 
 textarea {
     font-size: 1.5em;
+    vertical-align: top;
 }
 
 p {
     font-weight: bold;
-    font-size: 1.6em;
+    font-size: 1.1em;
+    margin-bottom: 1.63em;
+    display: block;
 }
 
 
@@ -51,7 +97,8 @@ img {
     max-width: 100%;
 }
 
-input:focus, textarea:focus{
+input:focus,
+textarea:focus {
     color: darkblue;
     width: auto;
     height: auto;
@@ -78,4 +125,181 @@ hr {
 
 footer {
     text-align: center;
+}
+
+figcaption {
+    font-weight: bold;
+    font-size: 1.3em;
+}
+
+
+/*  grids */
+
+main {
+    display: grid;
+}
+
+/* hero content */
+
+.content {
+    display: grid;
+}
+
+/*  gallery */
+
+.gallery {
+    display: grid;
+}
+
+/* figure */
+
+figure {
+    display: grid;
+}
+
+/*  article */
+
+article {
+    display: grid;
+}
+
+/* form container */
+.form-container {
+    display: grid;
+}
+
+/* footer */
+
+footer {
+    display: grid;
+}
+
+/*  layout */
+
+/*   mobile is the default layout*/
+
+/* tablet layout >=48rem (768px) */
+
+@media screen and (min-width: 48rem) {
+
+    /* hero content & about content */
+
+    .content {
+        grid-template-columns: 1fr 2fr 1fr;
+    }
+
+    .content picture,
+    .content p,
+    .content h1 {
+        grid-column: 2/3;
+        align-self: center;
+        justify-self: center;
+        margin: 0.8rem;
+    }
+
+    .mobile-first {
+        display: none;
+    }
+
+    /*	gallery */
+    .gallery {
+        grid-template-columns: 1fr 6fr 1fr;
+    }
+
+    .gallery h3,
+    .gallery figure {
+        grid-column: 2/3;
+        align-self: center;
+        justify-self: center;
+    }
+
+    /* figure inside gallery*/
+    figure {
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        justify-items: center;
+    }
+
+    /*	article */
+    article {
+        grid-template-columns: 1fr 48rem 1fr;
+    }
+
+    article h1,
+    .story-body {
+        grid-column: 2/3;
+    }
+
+    article h1 {
+        align-self: center;
+        justify-self: center;
+    }
+
+    /*	form */
+
+    .form-container {
+        grid-template-columns: 1fr 4fr 1fr;
+    }
+
+    .form-container h1,
+    .form-container form {
+        grid-column: 2/3;
+    }
+
+    .form-container h1 {
+        align-self: center;
+        justify-self: center;
+    }
+
+    form {
+        margin: 0;
+    }
+
+
+}
+
+/* wide screen layout >=64rem (1024px) */
+
+@media screen and (min-width: 64rem) {
+
+    /*      hero content */
+
+    /*	about content */
+
+    /*	gallery */
+
+    .gallery {
+        grid-template-columns: 1fr 1fr 1.7fr;
+        
+    }
+    .gallery h3 {
+        grid-column: 1/4; 
+    }
+    
+    .gallery figure {
+        grid-column: auto;
+        margin: 0;    
+    }
+    
+    .gallery figure{
+        grid-template-columns: 1fr;
+    }
+
+    
+     figure picture {
+       grid-column: 1/2;
+       padding: 1rem;
+    }
+    
+    figure figcaption {
+        grid-column: 1/2;
+         padding-top: 1.2rem;
+        align-self: center;
+        justify-self: center;
+    }
+
+    /*	article */
+
+    /*	form */
+
 }
