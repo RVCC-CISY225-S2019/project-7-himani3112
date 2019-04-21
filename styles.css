@@ -12,22 +12,22 @@ button {
 }
 
 .iama {
-  max-width: 100%;
-  color: #000000;
-  font-size: 1.4em;
+    max-width: 100%;
+    color: #000000;
+    font-size: 1.4em;
 }
 
-.my-name
- {
-  font-size: 1.4rem;
-  font-weight: 600;
-  margin-bottom: 0;
+.my-name {
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin-bottom: 0;
 }
 
 .my-location {
     font-size: 1.4rem;
     font-weight: 600;
 }
+
 /*
  footer  {
   padding: 0.2em;
@@ -113,7 +113,7 @@ img.my-picture {
 
 hr {
     border: none;
-    border-top: 3px dotted #111111;
+    border-top: 1px solid #111111;
     color: #fff;
     height: 2px;
     width: 100%;
@@ -270,30 +270,31 @@ footer {
 
     .gallery {
         grid-template-columns: 1fr 1fr 1.7fr;
-        
+
     }
+
     .gallery h3 {
-        grid-column: 1/4; 
+        grid-column: 1/4;
     }
-    
+
     .gallery figure {
         grid-column: auto;
-        margin: 0;    
+        margin: 0;
     }
-    
-    .gallery figure{
+
+    .gallery figure {
         grid-template-columns: 1fr;
     }
 
-    
-     figure picture {
-       grid-column: 1/2;
-       padding: 1rem;
+
+    figure picture {
+        grid-column: 1/2;
+        padding: 1rem;
     }
-    
+
     figure figcaption {
         grid-column: 1/2;
-         padding-top: 1.2rem;
+        padding-top: 1.2rem;
         align-self: center;
         justify-self: center;
     }
