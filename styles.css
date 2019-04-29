@@ -95,6 +95,9 @@ label {
 
 img {
     max-width: 100%;
+    display: block; width: 90%;
+  -webkit-filter: drop-shadow(16px 16px 10px rgba(0,0,0,0.9));
+  filter: drop-shadow(16px 16px 10px rgba(0,0,0,0.9));
 }
 
 input:focus,
